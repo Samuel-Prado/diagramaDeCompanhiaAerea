@@ -8,7 +8,7 @@ public class Passagem {
 
     private Double valor;
 
-    private Passageiro cpf;
+    private Passageiro passageiro;
 
     private List<Voo> voos;
 

@@ -8,14 +8,17 @@ public class Passagem {
 
     private Double valor;
 
+    private String cpfCliente;
+
     private Passageiro passageiro;
 
-    private List<Voo> voos;
+    private List<Programacao> programacao;
 
-    public Passagem(Integer codigo, Double valor, Passageiro cpf) {
+    public Passagem(Integer codigo, Double valor, String cpfCliente, Passageiro passageiro) {
         this.codigo = codigo;
         this.valor = valor;
-        this.cpf = cpf;
+        this.cpfCliente = cpfCliente;
+        this.passageiro = passageiro;
     }
 
     public Integer getCodigo() {
@@ -34,25 +37,35 @@ public class Passagem {
         this.valor = valor;
     }
 
-    public Passageiro getCpf() {
-        return cpf;
+    public String getCpfCliente() {
+        return cpfCliente;
     }
 
-    public void setCpf(Passageiro cpf) {
-        this.cpf = cpf;
+    public void setCpfCliente(String cpfCliente) {
+        this.cpfCliente = cpfCliente;
     }
 
-    public List<Voo> getVoos() {
-        return voos;
+    public Passageiro getPassageiro() {
+        return passageiro;
     }
 
-    public void setVoos(List<Voo> voos) {
-        this.voos = voos;
+    public void setPassageiro(Passageiro passageiro) {
+        this.passageiro = passageiro;
+    }
+
+    public List<Programacao> getProgamacao() {
+        return programacao;
+    }
+
+    public void setProgamacao(List<Programacao> progamacao) {
+        this.programacao = progamacao;
     }
 
     @Override
     public String toString() {
-        return "Passagem [codigo=" + codigo + ", valor=" + valor + ", cpf=" + cpf + ", voos=" + voos + "]";
+        return "Passagem [codigo=" + codigo + ", valor=" + valor + ", cpfCliente=" + cpfCliente + "]";
     }
+
+   
     
 }

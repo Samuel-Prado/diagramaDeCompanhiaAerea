@@ -12,7 +12,9 @@ public class Aeroporto {
 
     private Cidade cidade;
 
-    private List<Voo> voos;
+    private List<Voo> origem;
+
+    private List<Voo> destino;
 
     public Aeroporto(Integer codigo, String nome, String localizacao, Cidade cidade) {
         this.codigo = codigo;
@@ -53,19 +55,26 @@ public class Aeroporto {
         this.cidade = cidade;
     }
 
-    public List<Voo> getVoos() {
-        return voos;
+    public List<Voo> getOrigem() {
+        return origem;
     }
 
-    public void setVoos(List<Voo> voos) {
-        this.voos = voos;
+    public void setOrigem(List<Voo> origem) {
+        this.origem = origem;
+    }
+
+    public List<Voo> getDestino() {
+        return destino;
+    }
+
+    public void setDestino(List<Voo> destino) {
+        this.destino = destino;
     }
 
     @Override
     public String toString() {
         return "Aeroporto [codigo=" + codigo + ", nome=" + nome + ", localizacao=" + localizacao + ", cidade=" + cidade
-                + ", voos=" + voos + "]";
+                + "]";
     }
 
-    
 }

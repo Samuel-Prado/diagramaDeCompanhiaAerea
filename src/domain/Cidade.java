@@ -52,8 +52,7 @@ public class Cidade {
 
     @Override
     public String toString() {
-        return "Cidade [codigo=" + codigo + ", nome=" + nome + ", populacao=" + populacao + ", aeroportos=" + aeroportos
-                + "]";
+        return "Cidade [codigo=" + codigo + ", nome=" + nome + ", populacao=" + populacao + "]";
     }
 
     
